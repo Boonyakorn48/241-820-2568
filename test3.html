@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container .item{
+            background-color: rgb(14, 101, 177);
+        }
+        .main-container .item{
+            background-color: rgba(37, 214, 67, 0.753);
+        }
+        .button {
+            background-color: blue;
+            border: 0;
+            padding: 10px;
+        }
+        .button.active{
+            background-color: chartreuse;
+        }
+        .button.danger{
+            background-color: red;
+        }
+        .item1 + .item2{
+            background-color: rgb(165, 13, 140);
+        }
+        input[type="text"]{
+            border: 2px solid ;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!--1. item เป็นลูกค้าของ container -->
+    <div class="container">
+        container
+        <div class="item">
+            Item 1
+        </div>
+    </div>
+    <!-- 2. item เป็นลูกของ Container เเค่ชั้นเดียว -->
+    <div class ="main-container">
+            Container
+            <div class="item">
+                Item 1
+            </div>
+            <div class="item">
+                Item 2
+            </div>
+            <div class="item">
+                Item 3
+            </div> 
+    </div>
+
+
+    <!-- 3.มี class ติดกัน -->
+    <button class="button">Click Me</button>
+    <button class="button active">Click Me</button>
+    <button class="button danger">Click Me</button>
+
+    <!-- 4. เหมือนกัน -->
+    <div class="item1">Item1</div>
+    <div class="item2">Item2</div>
+
+    <!-- 5. attribute selector -->
+    <input type="text" name="fistname">
+    
+</body>
+</html>
