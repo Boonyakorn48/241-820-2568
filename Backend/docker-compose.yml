@@ -18,10 +18,10 @@ services:
     restart: always
 
   phpmyadmin:
-    image: phpmyadmin:latest # แก้ไขตัวสะกดจาก lastest เป็น latest
+    image: phpmyadmin:latest
     container_name: phpmyadmin_820
     environment:
-      PMA_HOST: db # ใช้ชื่อ Service "db" เเทนชื่อ Container เพื่อความยืดหยุ่นในระบบ Network
+      PMA_HOST: db # ใช้ชื่อ Service "db" แทนชื่อ Container เพื่อความยืดหยุ่นในระบบ Network
       PMA_PORT: 3306
       PMA_USER: root
       PMA_PASSWORD: root
