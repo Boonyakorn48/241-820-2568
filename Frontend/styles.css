@@ -79,7 +79,7 @@ textarea {
 }
 
 .message {
-    background-color: #333;
+    background-color: #ddd;
     padding: 10px;
     border-radius: 6px;
     margin-bottom: 15px;
@@ -87,14 +87,13 @@ textarea {
 }
 
 .message.success {
-    background-color: #45a049;
-    color: #ddd;
+    background-color: #4CAF50;
+    color: white;
     display: block
 }
-
 .message.danger {
-    background-color: red;
-    color: #ddd;
+    background-color: #f44336;
+    color: white;
     display: block
 }
 
